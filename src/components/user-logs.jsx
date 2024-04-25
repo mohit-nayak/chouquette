@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { database } from "@/firebase";
-import { ref, child, get } from "firebase/database";
+import { ref, child, get, query, limitToFirst, limitToLast } from "firebase/database";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
@@ -10,8 +10,8 @@ const UserLogs = () => {
   const [data, setData] = useState(null);
 
   const fetchUserLogs = () => {
-    const dbRef = ref(database);
-    get(child(dbRef, `users`))
+    const dbRef = query(child(ref(database), `users`), limitToLast(500));
+    get(dbRef)
       .then((snapshot) => {
         setData(snapshot.val());
       })
@@ -28,7 +28,7 @@ const UserLogs = () => {
     return <div className="text-center text-2xl">Loading...</div>;
   }
 
-  const dataKeys = Object.keys(data);
+  const dataKeys = Object.keys(data).reverse();
   if (dataKeys && [dataKeys]?.length < 1) {
     return <div className="text-center text-2xl">No users data!</div>;
   }
@@ -38,11 +38,15 @@ const UserLogs = () => {
       <h2 className="text-center text-2xl">Users</h2>
       {dataKeys?.map((key, index) => {
         const user = data[key];
+        const topImgDuration = 0.8;
         return (
           <motion.div
             initial={{ x: 60, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
-            transition={{ duration: 0.5, delay: 1 + 0.15 * index }}
+            transition={{
+              duration: 0.25,
+              delay: index < 10 ? topImgDuration + 0.1 * index : 0,
+            }}
             key={key}
             className="items-center justify-between gap-6 rounded-3xl border-2 border-primary px-4 py-2 shadow-md lg:flex"
           >
