@@ -1,22 +1,30 @@
 {
-  "name": "chouquette",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "react": "^18",
-    "react-dom": "^18",
-    "next": "14.2.3"
-  },
-  "devDependencies": {
-    "postcss": "^8",
-    "tailwindcss": "^3.4.1",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.3"
-  }
+	"name": "chouquette",
+	"version": "0.1.0",
+	"private": true,
+	"author": {
+		"name": "Mohit",
+		"email": "mohitn21@gmail.com",
+		"url": "https://www.linkedin.com/in/mohitnayakinc/"
+	},
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint"
+	},
+	"dependencies": {
+		"firebase": "^10.11.0",
+		"framer-motion": "^11.1.7",
+		"next": "14.2.3",
+		"react": "^18",
+		"react-dom": "^18"
+	},
+	"devDependencies": {
+		"eslint": "^8",
+		"eslint-config-next": "14.2.3",
+		"postcss": "^8",
+		"prettier-plugin-tailwindcss": "^0.5.14",
+		"tailwindcss": "^3.4.1"
+	}
 }

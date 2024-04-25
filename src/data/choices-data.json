@@ -1,0 +1,224 @@
+{
+  "root": [
+    {
+      "id": "1",
+      "name": "Vegan",
+      "children": [
+        {
+          "id": "2",
+          "name": "Coconut",
+          "image": "irish-stout.png"
+        },
+        {
+          "name": "Almond",
+          "image": "almond.png"
+        }
+      ],
+      "lastNode": true
+    },
+    {
+      "name": "Dairy",
+      "children": [
+        {
+          "name": "Milk",
+          "children": [
+            {
+              "name": "Classic",
+              "children": [
+                {
+                  "name": "Fruit",
+                  "children": [
+                    {
+                      "name": "Caramel apple",
+                      "image": "irish-stout.png"
+                    },
+                    {
+                      "name": "Mango",
+                      "image": "almond.png"
+                    }
+                  ],
+                  "lastNode": true
+                },
+                {
+                  "name": "Nut",
+                  "children": [
+                    {
+                      "name": "Peanut butter",
+                      "image": "irish-stout.png"
+                    }
+                  ],
+                  "lastNode": true
+                },
+                {
+                  "name": "Coffee house",
+                  "children": [
+                    {
+                      "name": "Chai",
+                      "image": "chai.png"
+                    },
+                    {
+                      "name": "Coffee",
+                      "image": "coffee.png"
+                    }
+                  ],
+                  "lastNode": true
+                }
+              ],
+              "lastNode": false
+            },
+            {
+              "name": "Adventure",
+              "children": [
+                {
+                  "name": "Spicy",
+                  "children": [
+                    {
+                      "name": "7 Spice",
+                      "image": "7-spice.png"
+                    },
+                    {
+                      "name": "7 Spice",
+                      "image": "7-spice.png"
+                    }
+                  ],
+                  "lastNode": true
+                },
+                {
+                  "name": "Savory",
+                  "children": [
+                    {
+                      "name": "Maple bacon",
+                      "image": "maple-bacon.png"
+                    },
+                    {
+                      "name": "Maple bacon",
+                      "image": "maple-bacon.png"
+                    }
+                  ],
+                  "lastNode": true
+                }
+              ],
+              "lastNode": false
+            }
+          ],
+          "lastNode": false
+        },
+        {
+          "name": "Dark",
+          "children": [
+            {
+              "name": "Classic",
+              "children": [
+                {
+                  "name": "Fruit",
+                  "children": [
+                    {
+                      "name": "Blueberry",
+                      "image": "irish-stout.png"
+                    },
+                    {
+                      "name": "Bloodorange",
+                      "image": "almond.png"
+                    },
+                    {
+                      "name": "Passionfruit",
+                      "image": "irish-stout.png"
+                    },
+                    {
+                      "name": "Rasp",
+                      "image": "raspberry.png"
+                    }
+                  ],
+                  "lastNode": true
+                },
+                {
+                  "name": "Nut",
+                  "children": [
+                    {
+                      "name": "Hazelnut",
+                      "image": "hazelnut.png"
+                    },
+                    {
+                      "name": "Almond",
+                      "image": "almond.png"
+                    }
+                  ],
+                  "lastNode": true
+                },
+                {
+                  "name": "Coffee house",
+                  "children": [
+                    {
+                      "name": "Matcha",
+                      "image": "chai.png"
+                    },
+                    {
+                      "name": "Cappacino",
+                      "image": "coffee.png"
+                    },
+                    {
+                      "name": "Cocoa",
+                      "image": "coffee.png"
+                    }
+                  ],
+                  "lastNode": true
+                }
+              ],
+              "lastNode": false
+            },
+            {
+              "name": "Adventure",
+              "children": [
+                {
+                  "name": "Floral",
+                  "children": [
+                    {
+                      "name": "Rose pistachio",
+                      "image": "7-spice.png"
+                    },
+                    {
+                      "name": "Hibiscus cinnamon",
+                      "image": "7-spice.png"
+                    },
+                    {
+                      "name": "Lavender",
+                      "image": "7-spice.png"
+                    }
+                  ],
+                  "lastNode": true
+                },
+                {
+                  "name": "Spicy",
+                  "children": [
+                    {
+                      "name": "Spicyfig",
+                      "image": "7-spice.png"
+                    }
+                  ],
+                  "lastNode": true
+                },
+                {
+                  "name": "Savory",
+                  "children": [
+                    {
+                      "name": "Balsamic",
+                      "image": "maple-bacon.png"
+                    },
+                    {
+                      "name": "Something",
+                      "image": "maple-bacon.png"
+                    }
+                  ],
+                  "lastNode": true
+                }
+              ],
+              "lastNode": false
+            }
+          ],
+          "lastNode": false
+        }
+      ],
+      "lastNode": false
+    }
+  ]
+}
