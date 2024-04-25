@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { database } from "@/firebase";
 import { ref, child, get } from "firebase/database";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const UserLogs = () => {
   const [data, setData] = useState(null);
@@ -12,16 +13,10 @@ const UserLogs = () => {
     const dbRef = ref(database);
     get(child(dbRef, `users`))
       .then((snapshot) => {
-        if (snapshot.exists()) {
-          console.log("snapped", snapshot.val());
-          setData(snapshot.val());
-        } else {
-          console.log("No data available");
-          setData(snapshot.val());
-        }
+        setData(snapshot.val());
       })
       .catch((error) => {
-        console.error(error);
+        // console.error(error);
       });
   };
 
@@ -39,12 +34,15 @@ const UserLogs = () => {
   }
 
   return (
-    <div className="space-y-6">
+    <div className="mb-6 space-y-6">
       <h2 className="text-center text-2xl">Users</h2>
-      {dataKeys?.map((key) => {
+      {dataKeys?.map((key, index) => {
         const user = data[key];
         return (
-          <div
+          <motion.div
+            initial={{ x: 60, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.5, delay: 1 + 0.15 * index }}
             key={key}
             className="items-center justify-between gap-6 rounded-3xl border-2 border-primary px-4 py-2 shadow-md lg:flex"
           >
@@ -64,7 +62,7 @@ const UserLogs = () => {
                 />
               ))}
             </div>
-          </div>
+          </motion.div>
         );
       })}
     </div>

@@ -17,7 +17,7 @@ const FallingChocolateBg = () => {
         alt=""
         width={1440}
         height={292}
-        className="hidden h-full w-full lg:block"
+        className="hidden h-full w-screen lg:block"
       />
       <Image
         src="/assets/images/background/falling-chocolate-mobile.svg"
