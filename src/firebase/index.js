@@ -5,7 +5,7 @@ import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: process.env.FIREBASE_API_KEY ?? "",
+  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
   authDomain: "chouquette-chocolates.firebaseapp.com",
   projectId: "chouquette-chocolates",
   storageBucket: "chouquette-chocolates.appspot.com",
