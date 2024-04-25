@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
       <body className="font-italian-old-style">
         {/* Background falling chocolate image */}
         <FallingChocolateBg />
-        <div className="mt-10">{children}</div>
+        <div className="mt-0">{children}</div>
       </body>
     </html>
   );

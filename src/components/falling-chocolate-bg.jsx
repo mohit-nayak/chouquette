@@ -17,14 +17,14 @@ const FallingChocolateBg = () => {
         alt=""
         width={1440}
         height={292}
-        className="hidden lg:block"
+        className="hidden h-full w-full lg:block"
       />
       <Image
         src="/assets/images/background/falling-chocolate-mobile.svg"
         alt=""
         width={390}
         height={157}
-        className="lg:hidden"
+        className="h-full w-full lg:hidden"
       />
     </motion.div>
   );
