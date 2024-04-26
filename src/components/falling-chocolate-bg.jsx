@@ -10,7 +10,7 @@ const FallingChocolateBg = () => {
       initial={{ y: "-100%" }}
       animate={{ y: 0 }}
       transition={{ duration: 1 }}
-      className="relative h-64"
+      className="relative h-auto lg:h-64"
     >
       <Image
         src="/assets/images/background/falling-chocolate-desktop.svg"
@@ -24,7 +24,7 @@ const FallingChocolateBg = () => {
         alt=""
         width={390}
         height={157}
-        className="h-full w-full lg:hidden"
+        className="h-full w-screen lg:hidden"
       />
     </motion.div>
   );
