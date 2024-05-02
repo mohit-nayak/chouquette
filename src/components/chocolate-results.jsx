@@ -31,31 +31,43 @@ const ChocolateResults = ({ chocolates }) => {
         </div>
       </div>
 
-      <div className="flex flex-wrap items-center justify-center gap-6">
-        {chocolates.map((chocolate, index) => (
-          <Image
-            src={`/assets/images/chocolates/${chocolate?.image ?? "almond.png"}`}
-            alt="Chocolate"
-            width={200}
-            height={200}
-            key={index}
-            className="h-32 w-32 md:h-52 md:w-52"
-          />
-        ))}
-      </div>
+      <motion.div
+        initial={{ y: 60, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.75, delay: 1 }}
+      >
+        <div className="flex flex-wrap items-center justify-center gap-6">
+          {chocolates.map((chocolate, index) => (
+            <Image
+              src={`/assets/images/chocolates/${chocolate?.image ?? "almond.png"}`}
+              alt="Chocolate"
+              width={200}
+              height={200}
+              key={index}
+              className="h-32 w-32 md:h-52 md:w-52"
+            />
+          ))}
+        </div>
+      </motion.div>
 
-      <div className="mt-8 text-center">
-        <button
-          className="cursor-pointer text-primary-light"
-          onClick={handleStartAgain}
-        >
-          Start over again?
-        </button>
-      </div>
+      <motion.div
+        initial={{ y: 60, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.75, delay: 2 }}
+      >
+        <div className="mt-8 text-center">
+          <button
+            className="cursor-pointer text-primary-light"
+            onClick={handleStartAgain}
+          >
+            Start over again?
+          </button>
+        </div>
 
-      <div className="mb-6 mt-8 md:mb-2">
-        <NewsLetter chocolates={chocolates} />
-      </div>
+        <div className="mb-6 mt-8 md:mb-2">
+          <NewsLetter chocolates={chocolates} />
+        </div>
+      </motion.div>
     </motion.div>
   );
 };

@@ -7,7 +7,7 @@
         {
           "id": "2",
           "name": "Coconut",
-          "image": "irish-stout.png"
+          "image": "coconut.png"
         },
         {
           "name": "Almond",
@@ -30,11 +30,11 @@
                   "children": [
                     {
                       "name": "Caramel apple",
-                      "image": "irish-stout.png"
+                      "image": "caramel-apple.png"
                     },
                     {
                       "name": "Mango",
-                      "image": "almond.png"
+                      "image": "mango.png"
                     }
                   ],
                   "lastNode": true
@@ -44,7 +44,7 @@
                   "children": [
                     {
                       "name": "Peanut butter",
-                      "image": "irish-stout.png"
+                      "image": "peanut-butter.png"
                     }
                   ],
                   "lastNode": true
@@ -73,12 +73,12 @@
                   "name": "Spicy",
                   "children": [
                     {
-                      "name": "7 Spice",
-                      "image": "7-spice.png"
+                      "name": "Bay spice",
+                      "image": "bay-spice.png"
                     },
                     {
                       "name": "7 Spice",
-                      "image": "7-spice.png"
+                      "image": "7spice.png"
                     }
                   ],
                   "lastNode": true
@@ -91,8 +91,8 @@
                       "image": "maple-bacon.png"
                     },
                     {
-                      "name": "Maple bacon",
-                      "image": "maple-bacon.png"
+                      "name": "Irish",
+                      "image": "irish-stout.png"
                     }
                   ],
                   "lastNode": true
@@ -114,15 +114,15 @@
                   "children": [
                     {
                       "name": "Blueberry",
-                      "image": "irish-stout.png"
+                      "image": "blueberry.png"
                     },
                     {
-                      "name": "Bloodorange",
-                      "image": "almond.png"
+                      "name": "Blood orange",
+                      "image": "blood-orange.png"
                     },
                     {
-                      "name": "Passionfruit",
-                      "image": "irish-stout.png"
+                      "name": "Passion fruit",
+                      "image": "passionfruit.png"
                     },
                     {
                       "name": "Rasp",
@@ -150,15 +150,25 @@
                   "children": [
                     {
                       "name": "Matcha",
-                      "image": "chai.png"
+                      "image": "matcha.png"
                     },
                     {
                       "name": "Cappacino",
-                      "image": "coffee.png"
+                      "image": "cappucino.png"
                     },
                     {
                       "name": "Cocoa",
-                      "image": "coffee.png"
+                      "image": "hot-cocoa.png"
+                    }
+                  ],
+                  "lastNode": true
+                },
+                {
+                  "name": "Sea salt",
+                  "children": [
+                    {
+                      "name": "Sea salt",
+                      "image": "sea-salt.png"
                     }
                   ],
                   "lastNode": true
@@ -174,15 +184,15 @@
                   "children": [
                     {
                       "name": "Rose pistachio",
-                      "image": "7-spice.png"
+                      "image": "rose-pistachio.png"
                     },
                     {
                       "name": "Hibiscus cinnamon",
-                      "image": "7-spice.png"
+                      "image": "hibiscus-cinnamon.png"
                     },
                     {
                       "name": "Lavender",
-                      "image": "7-spice.png"
+                      "image": "lavender.png"
                     }
                   ],
                   "lastNode": true
@@ -191,8 +201,8 @@
                   "name": "Spicy",
                   "children": [
                     {
-                      "name": "Spicyfig",
-                      "image": "7-spice.png"
+                      "name": "Spicy fig",
+                      "image": "spicy-fig.png"
                     }
                   ],
                   "lastNode": true
@@ -202,11 +212,11 @@
                   "children": [
                     {
                       "name": "Balsamic",
-                      "image": "maple-bacon.png"
+                      "image": "balsamic.png"
                     },
                     {
-                      "name": "Something",
-                      "image": "maple-bacon.png"
+                      "name": "Rosemary",
+                      "image": "rosemary.png"
                     }
                   ],
                   "lastNode": true

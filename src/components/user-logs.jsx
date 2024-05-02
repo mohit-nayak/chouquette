@@ -2,12 +2,12 @@
 
 import { useEffect, useState } from "react";
 import { database } from "@/firebase";
-import { ref, child, get, query, limitToFirst, limitToLast } from "firebase/database";
+import { ref, child, get, query, limitToLast } from "firebase/database";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
 const UserLogs = () => {
-  const [data, setData] = useState(null);
+  const [data, setData] = useState();
 
   const fetchUserLogs = () => {
     const dbRef = query(child(ref(database), `users`), limitToLast(500));
@@ -24,12 +24,12 @@ const UserLogs = () => {
     fetchUserLogs();
   }, []);
 
-  if (!data) {
+  if (data === undefined) {
     return <div className="text-center text-2xl">Loading...</div>;
   }
 
-  const dataKeys = Object.keys(data).reverse();
-  if (dataKeys && [dataKeys]?.length < 1) {
+  const dataKeys = data ? Object.keys(data).reverse() : [];
+  if (dataKeys?.length < 1) {
     return <div className="text-center text-2xl">No users data!</div>;
   }
 
